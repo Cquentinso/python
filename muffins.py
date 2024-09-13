@@ -1,8 +1,8 @@
-muffin=2
-cupcakes=2
+muffin=10
+cupcakes=10
 i=0
 
-for i in range(4):
+for i in range(10):
     choice=input(str('Do you want a muffin or a cupcake?'))
     if choice=='muffin':
         muffin= muffin-1
