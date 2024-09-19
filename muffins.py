@@ -1,17 +1,25 @@
+
+
+
+choice=input('Do you want a muffin or a cupcake?')
 muffin=10
 cupcakes=10
-i=0
 
-for i in range(10):
-    choice=input(str('Do you want a muffin or a cupcake?'))
-    if choice=='muffin':
-        muffin= muffin-1
-    elif choice=='cupcakes':
-        cupcakes= cupcakes-1
-i=i+1
-if cupcakes==0 and muffin==0:
-    print('out of stock')
+while choice!='0':
+    
+    if choice=='muffin' and muffin>0:
+         muffin= muffin-1
+         
+         if choice=='muffin' and muffin==0: 
+          print('Muffins are out of stock')
+        
+    if choice=='cupcakes' and cupcakes>0:
+         cupcakes= cupcakes-1
+         
+         if choice=='cupcakes' and cupcakes==0:
+              print('cupcakes are out of stock')
+    choice=input('Do you want a muffin or a cupcake?')
+              
 
-finish=input('press 0 to finish ')
 print ('cupcakes:',cupcakes)
 print('muffins:',muffin)
